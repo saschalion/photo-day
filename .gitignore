@@ -1,0 +1,7 @@
+#Hidden system files
+*.DS_Store
+*[Tt]humbs.db
+*.Trashes
+.idea
+
+node_modules
