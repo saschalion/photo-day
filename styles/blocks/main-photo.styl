@@ -1,6 +1,6 @@
 .main-photo
   position relative
-  margin 0 0 20px
+  margin 0 0 15px
   animation fadeInBottom unit($animationSpeed, 's') unit($animationSpeed * 2, 's') forwards
   opacity 0
 
@@ -13,7 +13,7 @@
     z-index 1
 
   &__text-inner
-    margin 15px 0 0
+    margin 13px 0 0
     font-size 13px
 
   &__text
@@ -23,9 +23,6 @@
   &__desc-link
     color $grayColor
 
-  &__desc
-    margin 7px 0 0
-
   &__desc-link
     text-decoration none
     transition .3s color
@@ -33,3 +30,15 @@
     &:hover
       color $grayColorHover
       text-decoration underline
+
+  &__corner
+    position absolute
+    bottom 0
+    left 50%
+    margin 0 0 0 -9px
+    width 0
+    height 0
+    border-style solid
+    border-width 0 9px 9px 9px
+    border-color transparent transparent #fff transparent
+    z-index 2

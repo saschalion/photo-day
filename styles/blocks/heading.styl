@@ -1,5 +1,5 @@
 .heading
-  margin 40px 0
+  margin 40px 0 28px
   font-family 'Playfair Display', serif
 
   &__title
@@ -13,6 +13,7 @@
 
   &__title-text
     position relative
+    padding 0 15px 0 0
     background #fff
     animation headingText unit($animationSpeed, 's') forwards
     z-index 2
@@ -20,10 +21,10 @@
   &__title-line
     position absolute
     right 0
-    bottom 0
+    bottom 2px
     left 0
     height 2px
     background #000
-    animation headingLine unit($animationSpeed, 's') unit($animationSpeed, 's') forwards
+    animation headingLine unit($animationSpeed * 2, 's') unit($animationSpeed, 's') forwards
     opacity 0
     z-index 1

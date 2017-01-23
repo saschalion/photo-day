@@ -46,6 +46,7 @@
                     </span>
                     <i class="photos__date-arr"></i>
                 </a>
+                <i class="main-photo__corner"></i>
             </div>
             <div class="main-photo__text-inner">
                 <div class="main-photo__text">
