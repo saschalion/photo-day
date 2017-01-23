@@ -1,1 +1,79 @@
-$images = '../images/'
+.photos
+  margin -16px 0 0 -16px
+
+  &__date-link
+    background #fff
+    text-align center
+    transition .3s background
+    text-decoration none
+    color #000
+    font-family 'Noto Serif', serif
+
+    &:hover
+      background #f1f1f1
+
+    &._type_main-photo
+      position absolute
+      top 20px
+      left 20px
+      width 160px
+      height 104px
+      background rgba(255, 255, 255, .8)
+      z-index 2
+
+      &:hover
+        background rgba(255, 255, 255, .9)
+
+  &__date-num,
+  &__date-month
+    display block
+
+  &__date-num
+    margin 20px 0 0
+    font-size 36px
+    line-height 36px
+
+  &__date-month
+    font-size 18px
+
+  &__date-arr
+    position absolute
+    right 20px
+    top 35px
+    width 0
+    height 0
+    border-style solid
+    border-width 3px 0 3px 4px
+    border-color transparent transparent transparent #000
+
+  &__item
+    position relative
+    display inline-block
+    margin 16px 0 0 16px
+    width 160px
+    height 104px
+    vertical-align top
+
+    &._type_ad
+      float right
+      height 220px
+
+  &__link
+    text-decoration none
+    overflow hidden
+
+    &._type_ad
+      transition .3s opacity
+
+      &:hover
+        opacity .9
+
+    &:not(._type_ad)
+      &:hover
+        .photos
+          &__image
+            transform scale(1.08)
+            backface-visibility hidden
+
+  &__image
+    transition transform .6s ease

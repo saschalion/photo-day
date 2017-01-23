@@ -15,7 +15,7 @@ $photos = array(
     array(
         'image' => '4-b.jpg',
         'type' => 'image',
-        'extraClass' => 'adidas-ad'
+        'extraClass' => '_type_adidas-ad _type_ad'
     ),
     array(
         'image' => '5.jpg',
@@ -79,7 +79,7 @@ $photos = array(
     array(
         'image' => '16.jpg',
         'type' => 'image',
-        'extraClass' => 'coca-cola-ad'
+        'extraClass' => ' _type_coca-cola-ad _type_ad'
     ),
     array(
         'image' => '17.jpg',

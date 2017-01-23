@@ -25,12 +25,12 @@
 
 <body class="page">
     <div class="page__container">
-        <header class="page__heading">
-            <h1 class="page__title">
-                <span class="page__title-text">
+        <header class="heading">
+            <h1 class="heading__title">
+                <span class="heading__title-text">
                     День в фото
                 </span>
-                <i class="page__title-line"></i>
+                <i class="heading__title-line"></i>
             </h1>
         </header>
 
@@ -49,7 +49,7 @@
             </div>
             <div class="main-photo__text-inner">
                 <div class="main-photo__text">
-                    Мельницы маленькой деревушки Brandmill близи курортного австрийского города Mayerhoffen.
+                    Мельницы маленькой деревушки Brandmill вблизи курортного австрийского города Mayerhoffen.
                 </div>
                 <div class="main-photo__desc">
                     Фото:
@@ -60,20 +60,20 @@
             </div>
         </section>
 
-        <section class="photos">
+        <section class="photos clearfix">
             <?php foreach($photos as $item) : ?>
                 <?php if ( $item['type'] == 'link' ) : ?>
-                    <a class="photos__item photos__date-link">
+                    <a class="photos__item photos__link photos__date-link" href="#">
                         <span class="photos__date-num">
                             <?php echo date('d', strtotime($item['date'])); ?>
                         </span>
                         <span class="photos__date-month">
                             <?php echo $monthsByIndex[date('n', strtotime($item['date']))]; ?>
                         </span>
-                        <i class="main-photo__date-arr"></i>
+                        <i class="photos__date-arr"></i>
                     </a>
                 <?php else : ?>
-                    <a class="photos__link<?php echo isset($item['extraClass']) ? ' _type_' . $item['extraClass'] : ''; ?>" href="#">
+                    <a class="photos__item photos__link<?php echo isset($item['extraClass']) ? ' ' . $item['extraClass'] : ''; ?>" href="#">
                         <img class="photos__image" src="/img/<?php echo $item['image']; ?>" alt="">
                     </a>
                 <?php endif; ?>
@@ -88,17 +88,17 @@
             <span class="pagination__links">
                 <?php foreach($pagination as $item) : ?>
                     <?php if ( isset($item['active']) && $item['active'] ) : ?>
-                        <a class="pagination__link _state_active">
+                        <a class="pagination__link _type_page _state_active">
                             <?php echo $item['page']; ?>
                         </a>
                     <?php else : ?>
-                        <a class="pagination__link" href="?page=<?php echo $item['page']; ?>">
+                        <a class="pagination__link _type_page" href="?page=<?php echo $item['page']; ?>">
                             <?php echo $item['page']; ?>
                         </a>
                     <?php endif; ?>
                 <?php endforeach; ?>
 
-                <a class="pagination__link _type_nex" href="?page=2">
+                <a class="pagination__link _type_next" href="?page=2">
                     Следующая
                 </a>
             </span>

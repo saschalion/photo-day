@@ -1,0 +1,29 @@
+.heading
+  margin 40px 0
+  font-family 'Playfair Display', serif
+
+  &__title
+    position relative
+    margin 0
+    font-size 40px
+    font-weight normal
+    text-transform uppercase
+    line-height 40px
+    overflow hidden
+
+  &__title-text
+    position relative
+    background #fff
+    animation headingText unit($animationSpeed, 's') forwards
+    z-index 2
+
+  &__title-line
+    position absolute
+    right 0
+    bottom 0
+    left 0
+    height 2px
+    background #000
+    animation headingLine unit($animationSpeed, 's') unit($animationSpeed, 's') forwards
+    opacity 0
+    z-index 1
