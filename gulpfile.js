@@ -12,8 +12,7 @@ var dirPath = './styles';
 gulp.task('css', function() {
     gulp.src([
         dirPath + '/bpl-normalize.styl',
-        dirPath + '/**/*.styl',
-        dirPath + '/responsive.styl'
+        dirPath + '/**/*.styl'
     ])
         .pipe(concat('main.styl'))
         .pipe(stylus({
@@ -32,8 +31,7 @@ gulp.task('watch', function() {
     watch(dirPath + '/**/*.styl', function() {
         return gulp.src([
             dirPath + '/bpl-normalize.styl',
-            dirPath + '/**/*.styl',
-            dirPath + '/responsive.styl'
+            dirPath + '/**/*.styl'
         ])
             .pipe(sourcemaps.init({loadMaps: true}))
             .pipe(concat('main.styl'))

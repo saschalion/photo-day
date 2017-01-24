@@ -1,17 +1,17 @@
 <?php require 'includes/variables.php'; ?>
 
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<!--[if lt IE 7]>      <html class="no-js window lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js window lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js window lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js window"> <!--<![endif]-->
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>День в фото</title>
     <meta name="description" content="День в фото">
     <meta name="keywords" content="День в фото">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="icon" href="/favicon.ico?ver=<?php echo time(); ?>" type="image/x-icon">
     <link rel="shortcut icon" href="/favicon.ico?ver=<?php echo time(); ?>" type="image/x-icon">

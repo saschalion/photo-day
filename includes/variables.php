@@ -1,6 +1,12 @@
 <?php
 $photos = array(
     array(
+        'image' => '4-b.jpg',
+        'type' => 'image',
+        'extraClass' => '_type_adidas-ad _type_ad'
+    ),
+
+    array(
         'image' => '1.jpg',
         'type' => 'image',
     ),
@@ -12,11 +18,7 @@ $photos = array(
         'image' => '3.jpg',
         'type' => 'image',
     ),
-    array(
-        'image' => '4-b.jpg',
-        'type' => 'image',
-        'extraClass' => '_type_adidas-ad _type_ad'
-    ),
+
     array(
         'image' => '5.jpg',
         'type' => 'image',
@@ -30,6 +32,13 @@ $photos = array(
         'image' => '6.jpg',
         'type' => 'image',
     ),
+
+    array(
+        'image' => 'theatre-ad.jpg',
+        'type' => 'image',
+        'extraClass' => '_type_theatre _type_ad'
+    ),
+
     array(
         'image' => '7.jpg',
         'type' => 'image',

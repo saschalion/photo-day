@@ -1,0 +1,103 @@
+@media screen and (max-width: 767px)
+  .window
+    .page
+      &__container
+        width 440px
+
+    .main-photo
+      margin-bottom 10px
+
+      &__image-inner
+        height 285px
+
+      &__text-inner,
+      &__corner
+        display none
+
+    .photos
+      margin -10px 0 0 -6px
+
+      &__date-link
+        &._type_main-photo
+          top 10px
+          left 10px
+          width 80px
+          height 53px
+
+          .photos
+            &__date-arr
+              display none
+
+      &__date-num
+        margin-top 9px
+        font-size 18px
+        line-height 18px
+
+      &__date-month
+        font-size 14px
+
+      &__date-arr
+        top 16px
+        right 9px
+
+      &__item
+        margin 10px 0 0 6px
+
+        &._type_coca-cola-ad
+          display none
+
+        &:not(._type_ad)
+          width 80px
+          height 53px
+
+@media screen and (max-width: 467px)
+  .window
+    .page
+      &__container
+        width 310px
+
+    .heading
+      margin 25px 0 18px
+
+      &__title
+        font-size 26px
+        line-height 26px
+
+    .main-photo
+      margin 0
+
+      &__image-inner
+        height 200px
+
+    .photos
+        margin 0 0 0 -2px
+
+        &__date-link
+          &._type_main-photo
+            top 6px
+            left 6px
+            width 80px
+            height 53px
+
+        &__link
+          &._type_ad
+            display none
+
+          &._type_theatre
+            display inline-block
+            margin-left 2px
+
+        &__item:not(._type_ad)
+          margin 6px 0 0 2px
+          width 73px
+          height 48px
+
+    .pagination
+      margin 19px 0 25px
+
+      &__label
+        display none
+
+      &__link
+        &:not(._type_next)
+          margin-left 1px
